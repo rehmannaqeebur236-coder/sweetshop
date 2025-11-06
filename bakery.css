@@ -1,0 +1,144 @@
+body {
+  background: #fff8e1;
+  color: #3e2723;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #4e342e;
+  color: #fff8e1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff8e1;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #ffcc80;
+  transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+/* ===== SECTION ===== */
+.bakery-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #4e342e;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* ===== CARDS ===== */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  width: 260px;
+  box-shadow: 0 6px 18px rgba(78, 52, 46, 0.15);
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(78, 52, 46, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.card h3 {
+  color: #4e342e;
+  margin: 12px 0 6px;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #5d4037;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: inline-block;
+  background: #4e342e;
+  color: #fff8e1;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #4e342e;
+  color: #fff8e1;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card {
+    width: 90%;
+  }
+}

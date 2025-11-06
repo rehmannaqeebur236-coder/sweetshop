@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>London Bakers & Sweets</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  
+<header>
+  <div class="brand">
+    <div class="logo">LB</div>
+    <div>
+      <h1>London Bakers & Sweets</h1>
+      <p class="tagline">Sweets • Bakery • Gift Hampers</p>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="sweet.html">Products – Sweets</a></li>
+      <li><a href="bakery.html">Products – Bakery</a></li>
+      <li><a href="gifthamper.html">Gift Hampers</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    
+<!-- ===== HERO SECTION ===== -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h2>Welcome to <span>London Bakers & Sweets</span></h2>
+    <p>Delicious sweets and bakery items made fresh daily. Explore our range of freshly baked treats, gift hampers, and more!</p>
+    <div class="buttons">
+      <button class="btn primary" onclick="scrollToSection('sweets')">View Sweets</button>
+      <button class="btn secondary" onclick="scrollToSection('gifts')">Gift Hampers</button>
+    </div>
+  </div>
+
+  <!-- Image Slider -->
+  <div class="hero-image">
+    <div class="slider">
+      <img src="Assest/SLIDER 1.webp" alt="Bakery 1">
+      <img src="Assest/SLIDER 2.jpg" alt="Bakery 2">
+      <img src="Assest/SLIDER 3.webp" alt="Bakery 3">
+    </div>
+  </div>
+</section>
+
+    <!-- Products Section -->
+<section id="products">
+  <h2 class="section-title">Our Products</h2>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-cat="sweets" onclick="window.location.href='sweets.html'">Sweets</button>
+    <button class="tab" data-cat="bakery" onclick="switchCategory(event)">Bakery</button>
+  </div>
+
+  <!-- Products Grid -->
+  <div id="productsGrid" class="grid" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 30px;">
+
+    <!-- Card 1 -->
+    <div class="card" style="width: 18rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+      <img src="Assest/sweets.jpg" class="card-img-top" alt="Gulab Jamun">
+      <div class="card-body" style="text-align: center;">
+        <h5 class="card-title">Sweets</h5>
+        <p class="card-text">Soft and juicy traditional sweet made with khoya and soaked in sugar syrup.</p>
+        <a href="#" class="btn btn-primary" style="background-color:#ff6f61; border:none;">Click</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" style="width: 18rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+      <img src="Assest/card 4.webp" class="card-img-top" alt="Barfi">
+      <div class="card-body" style="text-align: center;">
+        <h5 class="card-title">Bakery</h5>
+        <p class="card-text">Rich and creamy cashew sweet, perfect for celebrations and gifting.</p>
+        <a href="#" class="btn btn-primary" style="background-color:#ff6f61; border:none;">Click</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Gift Hampers -->
+    <section id="products">
+  <h2 class="section-title">Gift Hampers</h2>
+
+  <div class="cards-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="Assest/Gift hampers 3.jpg" alt="Chocolate Cake">
+      <h3>Chocolate Cake</h3>
+      <p>Rich & moist dark chocolate layered with creamy frosting.</p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="Assest/Gift hampers 32.jpg" alt="Cupcake">
+      <h3>Vanilla Cupcake</h3>
+      <p>Soft vanilla base topped with pink buttercream swirl.</p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="Assest/Gift hampers.jpg" alt="Pastry">
+      <h3>Strawberry Pastry</h3>
+      <p>Fresh strawberry layers with light whipped cream frosting.</p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+  </div>
+</section>
+   
+    
+
+    <!-- About Us -->
+    <section id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="Assest/about.jpg" alt="Our Bakery">
+    </div>
+
+    <div class="about-content">
+      <h2>About Us</h2>
+      <p>
+        Welcome to <strong>London Bakers & Sweets</strong> — where every bite tells a story of love and sweetness.
+        From freshly baked breads and creamy pastries to traditional sweets made with perfection,
+        we bring you a delightful experience that warms your heart.
+      </p>
+
+      <p>
+        Our passion is to craft premium quality bakery and sweet items using only the finest ingredients.
+        Whether it’s a celebration or a simple treat, we make it special for you with our love for baking 💕
+      </p>
+
+      <a href="Assest/about.jpg" class="btn">Explore Our Menu</a>
+    </div>
+  </div>
+</section>
+  <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Get in Touch 💌</h2>
+
+  <div class="contact-container">
+    <!-- Left: Contact Info -->
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p><strong>🏠 Address:</strong> 221B Baker Street, London, UK</p>
+      <p><strong>📧 Email:</strong> 
+        <a href="mailto:contact@londonbakers.com">contact@londonbakers.com</a>
+      </p>
+      <p><strong>📞 Phone:</strong> +44 20 7946 1234</p>
+      <p><strong>🕒 Working Hours:</strong> Mon – Sun | 8:00 AM – 10:00 PM</p>
+
+      <div class="map-box">
+        <iframe 
+          src="https://www.google.com/maps?q=221B+Baker+Street,+London,+UK&output=embed" 
+          width="100%" height="200" style="border:0;" 
+          allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Right: Contact Form -->
+    <form id="contactForm" class="contact-form" onsubmit="handleContact(event)">
+      <h3>Send Us a Message</h3>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button class="btn primary" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> London Bakers & Sweets | Prices in USD [$]
+</footer>
+
+<script>
+  // simple year auto-update
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // demo contact form handler
+  function handleContact(e) {
+    e.preventDefault();
+    alert("Thank you for contacting London Bakers & Sweets! 🍰 We'll get back to you soon.");
+    e.target.reset();
+  }
+</script>
+</body>
+</html>
